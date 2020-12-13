@@ -21,16 +21,13 @@
           <a class="nav-link" href="manage_lecturer.php">Manage Lecturers</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="manage_projects.php">Manage Projects</a>
-        </li>
-        <li class="nav-item">
           <a class="nav-link" href="manage_notebook.php">Manage Notebook</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="manage_students.php">Manage Students</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-danger" href="/logout.php">Logout</a>
+          <a class="nav-link text-danger" href="../logout.php">Logout</a>
         </li>
       </ul>
     </div>

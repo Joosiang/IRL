@@ -1,5 +1,6 @@
 <?php
 include 'includes/header.php';
+
 // Sql query
 $sql  = " SELECT * FROM tbl_notebook ";
 $result = query($sql);
@@ -28,6 +29,7 @@ $result = query($sql);
             <h1 class="page-header">
               Manage Notebook
               <span><a href="installsw.php" class="btn btn-primary btn-sm">Install Software on Notebook</a></span>
+              <span><a href="add_notebook.php" class="btn btn-primary btn-sm">Add Notebook</a></span>
             </h1>
             <div class="col-md-12">
               <!-- Table start -->
@@ -36,13 +38,13 @@ $result = query($sql);
                   <tr>
                     <th>Serial No.</th>
                     <th>Model</th>
-                    <th>Made of</th>
+                    <th>Made by</th>
                     <th>Processor</th>
                     <th>OS</th>
                     <th>RAM Size</th>
                     <th>Hard Disk</th>
                     <th>Installed Software</th>
-                    <th>Edit/Delete</th>
+                    <th>Delete</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -52,16 +54,9 @@ $result = query($sql);
                   ?>
 
                     <tr>
-                      <td><?php echo   $row['serialNo']; ?>
-                      </td>
-
-                      <td><?php echo  $row['model']; ?>
-                      </td>
-                      <td>
-                        <?php echo  $row['make'];  ?>
-                      </td>
-
-
+                      <td><?php echo   $row['serialNo']; ?></td>
+                      <td><?php echo  $row['model']; ?></td>
+                      <td><?php echo  $row['make'];  ?></td>
                       <td><?php echo  $row['processor']; ?></td>
                       <td><?php echo  $row['os']; ?></td>
                       <td><?php echo  $row['ram']; ?></td>
@@ -77,12 +72,11 @@ $result = query($sql);
                             echo $row_sw['publisher'] . " " . $row_sw['title'];
                             echo "</br> "; ?>
                         <?php
-                          } ?></td>
+                          } ?>
+                      </td>
                       <td>
                         <div class="action_links">
-                          <!-- Edit and Delete -->
-                          <a href="edit_notebook.php?id=<?php echo  $row['serialNo']; ?>">Edit</a>
-                          <a href="del_notebook.php?id=<?php echo $row['serialNo']; ?>">Delete</a>
+                          <a href="del_notebook.php?id=<?php echo  $row['serialNo']; ?>">Delete</a>
                         </div>
                       </td>
                     </tr>

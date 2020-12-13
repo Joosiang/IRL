@@ -1,5 +1,6 @@
 <?php
-include("includes/header.php");
+include 'includes/header.php';
+
 // Project data
 $sql  = " SELECT * FROM tbl_project ";
 $result = query($sql);
@@ -17,16 +18,15 @@ $result = query($sql);
 <body>
     <div id="page-wrapper">
         <div class="container-fluid">
-            <!-- Page Heading -->
             <div class="row">
                 <div class="col-lg-12">
                     <p class="bg-success">
                     </p>
                     <h1 class="page-header">
-                        Manage Projects <span><a href="add_proj.php" class="btn btn-primary btn-sm">Add Project</a></span>
+                        Manage Projects
+                        <span><a href="add_proj.php" class="btn btn-primary btn-sm">Add Project</a></span>
                     </h1>
                     <div class="col-md-12">
-                        <!-- Table start -->
                         <table class="table table-hover">
                             <thead>
                                 <tr>
@@ -35,7 +35,7 @@ $result = query($sql);
                                     <th>Start Date</th>
                                     <th>End Date</th>
                                     <th>Budget</th>
-                                    <th>Edit/Delete</th>
+                                    <th>Delete</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -50,7 +50,6 @@ $result = query($sql);
                                         <td><?php echo  $row['budget']; ?></td>
                                         <td>
                                             <div class="action_links">
-                                                <a href="editproj.php?id=<?php echo  $row['projectNo']; ?>">Edit</a>
                                                 <a href="deleteproj.php?id=<?php echo $row['projectNo']; ?>">Delete</a>
                                             </div>
                                         </td>
@@ -60,7 +59,6 @@ $result = query($sql);
                                 ?>
                             </tbody>
                         </table>
-                        <!-- Table ends -->
                     </div>
                 </div>
             </div>
