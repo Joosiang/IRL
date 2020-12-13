@@ -127,6 +127,22 @@ For Student:
 - Username: S100000
 - Password: password1234
 
+## Specifications
+
+Software:
+- XAMPP
+- Google Chrome
+- VS Code
+
+Operating System:
+- Windows 10
+
+Hardware:
+- Keyboard
+- SSD/HDD (500GB)
+- Intel core i5
+- Touchpad
+
 
 ## Credits
 https://www.tutorialrepublic.com/php-tutorial/php-mysql-select-query.php
