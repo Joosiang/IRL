@@ -54,11 +54,11 @@ For Student:
 
 Features that I would like to implement in the future:
 
-- Able to add a full CRUD for all pages in administrator
+- Able to add a full CRUD for all pages in administrator.
 
-- Add a report page to show all the list of details within a page
+- Add a report page to show all the list of details within a page.
 
-- Did not add proper validation for pages like add project
+- Did not add proper validation for pages like add project, add notebook.
 
 ## Technologies Used
 
@@ -100,13 +100,6 @@ For any scenarios that have not been automated, test the user stories manually a
 6. Delete a project: (Admin)
     1. Go to the "Manage Notebook" page and click on "Delete" on any of the notebook.
     2. The project details should be deleted.
-
-Problems 
-
-Did not do proper validation for these pages
-
-- "Add Projects" page is able to submit even when no information is typed
-- "Add Notebook" page is able to submit even when no information is typed
 
 
 ### Login Details
