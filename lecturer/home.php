@@ -57,7 +57,7 @@ $lec = $_SESSION['username'];
             </div>
             <div class="col-4">
                 <!-- lecturer project information start -->
-                <h5>Projects details</h5>
+                <h5>Projects Supervising</h5>
                 <hr>
                 <?php
                 // SQL Query

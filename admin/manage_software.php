@@ -26,7 +26,6 @@ $result = query($sql);
                         </p>
                         <h1 class="page-header">
                             Manage Software
-                            <span><a href="add_sw.php" class="btn btn-primary btn-sm">Add Software</a></span>
                             <span><a href="catmanage.php" class="btn btn-primary btn-sm">Manage Category</a></span>
                         </h1>
 
@@ -61,7 +60,6 @@ $result = query($sql);
                                             </div>
                                         </td>
                                         </tr>
-                                        
                                     <?php
                                     }
                                     ?>

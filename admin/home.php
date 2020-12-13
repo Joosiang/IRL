@@ -50,7 +50,7 @@ $result = query($sql);
                                         <td><?php echo  $row['budget']; ?></td>
                                         <td>
                                             <div class="action_links">
-                                                <a href="deleteproj.php?id=<?php echo $row['projectNo']; ?>">Delete</a>
+                                                <a href="del_proj.php?id=<?php echo $row['projectNo']; ?>">Delete</a>
                                             </div>
                                         </td>
                                     </tr>

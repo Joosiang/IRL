@@ -30,7 +30,7 @@ function add_proj($title, $cname, $sdate, $edate, $desc, $budget)
 	$budget              = escape($budget);
 
 	// SQL query
-	$sql  = " INSERT INTO tbl_project(projectTitle,startDate ,endDate, description ,companyName, budget) ";
+	$sql  = " INSERT INTO tbl_project(projectTitle,startDate ,endDate, description,companyName, budget) ";
 	$sql .= " VALUES('$title','$sdate','$edate','$desc','$cname','$budget' )";
 	if ($result = query($sql)) {
 		confirm($result);
@@ -41,6 +41,7 @@ function add_proj($title, $cname, $sdate, $edate, $desc, $budget)
 	}
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -91,4 +92,4 @@ function add_proj($title, $cname, $sdate, $edate, $desc, $budget)
 
 </html>
 
-<?php include 'includes/footer.php' ?>
+<?php include 'includes/footer.php'; ?>
